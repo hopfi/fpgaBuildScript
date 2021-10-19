@@ -1,0 +1,83 @@
+{
+    "projectConfig": {
+        "general": {
+            "projectName": "",
+            "swProjectName": "",
+            "vendor": "",
+            "topLevelName": "",
+            "testbenchName": "",
+            "outputFilesName": "",
+            "autogenerateBitstream": false,
+            "vhdlStandard": "",
+            "svStandard": "",
+            "runImpl": true
+        },
+        "xilinx": {
+            "vivadoVersion": "",
+            "fpgaPart": "",
+            "implStrat": "path/to/tcl/file",
+            "IPIntegrator": {
+                "blockDesignFiles": {
+                    "designs": [
+                        {"path": "", "designName": ""}
+                    ]
+                }
+            },
+            "IPPackager": {
+                "configFile": "path/to/ippackager/file/tcl",
+                "packageIP": true,
+                "genereateIP": false,
+                "synthCheck": false
+            }
+        },
+        "intel": {
+            "quartusVersion": "",
+            "familyName": "",
+            "deviceName": "",
+            "implStrat": "path/to/tcl/file",
+            "genereateIP": false,
+            "synthCheck": false
+        }
+    },
+    "projectVersion": {
+        "major": 1,
+        "minor": 2,
+        "patch": 3,
+        "userdata": "This is text1!"
+    },
+    "hdl": {
+        "vhdl": [ 
+            {"path": "path/to/module/1", "library": "gen"},
+            {"path": "path/to/module/2", "library": "gen"} 
+        ],
+        "sv": [ 
+            {"path": "path/to/module/1", "library": "gen"},
+            {"path": "path/to/module/2", "library": "gen"} 
+        ]
+    },
+    "constraints": {
+        "xilinx": [
+            "path/to/xdc/file",
+            "path/to/xdc/file2"
+        ],
+        "intel": [
+            "path/to/sdc/file",
+            "path/to/sdc/file2"
+        ]
+    },
+    "ip": {
+        "xilinx": [
+            {"path": "path/to/xci/file", "name": "filename1.xci"},
+            {"path": "path/to/xci/file", "name": "filename2.xci"}
+        ],
+        "intel": [
+            {"path": "path/to/qip/file", "name": "filename1.qip"},
+            {"path": "path/to/qsys/file", "name": "filename2.qsys"}
+        ],
+        "3rdParty": [
+        ]
+    },
+    "misc": {
+
+    }
+}
